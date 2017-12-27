@@ -1,5 +1,6 @@
 .container{
     @include flexbox();
+    width: 100%;
     // flex-direction: column;
     @include flex-direction(column);
     height: 100%;

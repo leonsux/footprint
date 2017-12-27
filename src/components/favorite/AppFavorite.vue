@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    故事
+    收藏
   </div>
 </template>
 
 <script>
   
   export default {
-    name: 'app-story'
+    name: 'app-favorite'
   }
 </script>
 

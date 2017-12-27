@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    故事
+    消息
   </div>
 </template>
 
 <script>
   
   export default {
-    name: 'app-story'
+    name: 'app-message'
   }
 </script>
 

@@ -2,22 +2,21 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    <div class="tab-bar"></div>
+    <app-tab-bar></app-tab-bar>
   </div>
 </template>
 
 <script>
+import AppTabBar from './components/tab-bar/AppTabBar'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    AppTabBar
+  }
 }
 </script>
 
-<style lang="scss">
-#app {
-  height: 100%;
-  
-  .tab-bar{
+<style>
 
-  }
-}
 </style>

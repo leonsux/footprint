@@ -1,0 +1,12 @@
+.tab-bar{
+  width: 100%;
+  height: 50px;
+  background: black;
+  > ul{
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items(center);
+    height: 100%;
+    color: #fff;
+  }
+}
