@@ -4,6 +4,9 @@
     <p v-for="item in goods">
       {{item}}
     </p>
+    <h1>
+      {{$store.state.count}}
+    </h1>
   </div>
 </template>
 

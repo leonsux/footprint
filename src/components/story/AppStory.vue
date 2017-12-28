@@ -4,6 +4,11 @@
     <p v-for="item in goods">
       {{item}}
     </p>
+    <h1>
+      <button @click="add(10)">+++</button>
+      {{$store.state.count}}
+      <button @click="del">---</button>
+    </h1>
   </div>
 </template>
 
@@ -17,12 +22,27 @@
         goods: []
       }
     },
+    methods: {
+      add (step) {
+        // console.log(this.$store.state.count++)
+        this.$store.commit('increment', step)
+      },
+      del () {
+        this.$store.commit({
+          type: 'decrement',
+          params: {
+            step: 5
+          }
+        })
+      }
+    },
     mounted () {
       // fetch('/api/datalist')
       // .then((res) => res.json())
       // .then((res) => {
       //   console.log(res)
       // })
+      console.log(this.$store.state.count)
       axios.get('/api/stories', {
         params: {}
       }).then((res) => {
